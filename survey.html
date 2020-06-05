@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Developer Survey</title>
+        <meta name="description" content="Developer Survey">
+        <meta name="aurthor" content="Erik Gross">
+        <meta name="creator" content="Wesley Stokes">
+        <link rel="icon" href="images/favicon.png"> <!why is this link needed>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="main.html">Developer Relations Home</a></li>
+                <li><a href="survey.html">Developer survey</a></li>
+                <li><a href="https://www.libertymutual.com/">Liberty Mutual Home</a></li>
+            </ul>
+        </nav>
+        <main class="forumContainer">
+            <form id="survey-form" class="surveyform">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter Your Email Address" required="">
+                </div>
+                <div class="form-group">
+                    <label id="n-number" for="n-number">Employee ID</label>
+                    <input type="text" name="nnumber" id="nnumber" class="form-control" placeholder="Enter Your N-Number" required="">
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="number">Age<span class="clue">(Optional)</span></label>
+                    <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Enter Your Age" required="">
+                </div>
+                <div class="form-group">
+                    <p>
+                        Which option best describes your current role as it relates to IT? </p>
+                    <select id="dropdown" name="role" class="form-control" required="">
+                        <option disabled="" selected="" value="">Choose One</option>
+                        <option value="notit">I don't work in IT but want to</option>
+                        <option value="init">I work in IT</option>
+                        <option value="manger">I am a manager of IT personnel</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recomment employment at Liberty Mutual to an IT professional</p>
+                    <label><input name="user-recommend" value="defintely" type="radio" class="input-radio" checked="">Definitely</label>
+                    <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" checked="">Maybe</label>
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" checked="">Not Sure</label>
+                </div>
+                <div class="form-group">
+                    <p>What current technology at Liberty Mutual do you most feel should be phased out?
+                    </p>
+                    <select id="most-like" name="most-like" class="form-control" required="">
+                        <option disabled="" selected="" value="">Select an option</option>
+                        <option value="webforms">ASP>NET WEbforms</option>
+                        <option value="java">Java</option>
+                        <option value="cobol">COBOL</option>
+                        <option value="ssis">SSIS</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What technology would you like to see embraced in Liberty Mutual's IT operations?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label><input name="prefer" value="react-js" type="checkbox" class="input-checkbox">React.js</label>
+                    <label><input name="prefer" value="microservices" type="checkbox" class="input-checkbox">Microservices</label>
+                    <label><input name="prefer" value="golang" type="checkbox" class="input-checkbox">Golang</label>
+                    <label><input name="prefer" value="custom-middleware" type="checkbox" class="input-checkbox">Custom Middleware</label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter You Comment Here..."></textarea> <! More understanding needed>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit Survey</button>
+                </div>
+            </form>
+        </main>
+        <footer class="disclosure">
+            <p><img src="images/favicon.png"> 2020 by Liberty Mutual. All rights reserved</p>
+        </footer>
+    </body>
+</html>

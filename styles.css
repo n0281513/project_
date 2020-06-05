@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+    .footer {
+    flex-shrink: 0;
+}
+
+nav {
+    background: #FFD000;
+    padding-top: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+nav li {
+    display: inline-block;
+    margin-right: -4px;
+    font-size: 1.2em;
+    line-height: 40px;
+    width: 300;
+    height: 50px;
+    font-size: 1.4em;
+    padding-right: 25px;
+}
+
+nav li a {
+    color: #34373D;
+}
+
+nav li.lastNav {
+    padding-right: 0px;
+}
+
+main {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#survey-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    padding-left: 15px;
+}
